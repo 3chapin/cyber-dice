@@ -5,7 +5,6 @@ import { type Player } from '@/types/player.ts'
 import { updateStorage } from '@/utils/storageUtils.ts'
 import { type Event } from '@/types/event.ts'
 import { generateId } from '@/utils/generateId.ts'
-import { useRouter } from 'vue-router'
 
 export const useCyberDiceGame = (
 	dragging: { value: boolean },
@@ -17,8 +16,6 @@ export const useCyberDiceGame = (
 	focusInput: () => void,
 	unfocusInput: () => void,
 ) => {
-	const router = useRouter()
-
 	const gameData = ref<GameData>(createDefaultGameData())
 
 	const playersStillIn = computed<Player[]>(() => {
@@ -137,7 +134,7 @@ export const useCyberDiceGame = (
 
 	const exitGame = () => {
 		resetStorage()
-		router.push('/mjlowell.com')
+		window.location.href = '/mjlowell.com'
 	}
 
 	const resetStorage = () => {

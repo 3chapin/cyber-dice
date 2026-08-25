@@ -648,6 +648,7 @@ const {
 						see rules
 					</button>
 					<button
+						v-if="isMobileDevice === false"
 						name="exit-game"
 						@click="exitGame"
 						@touchstart="() => {}"

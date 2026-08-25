@@ -14,21 +14,21 @@ export default defineConfig({
 		VitePWA({
 			registerType: 'autoUpdate',
 			manifest: {
-				name: 'neon games',
-				short_name: 'neon games',
+				name: 'cyber dice',
+				short_name: 'cyber dice',
 				start_url: '.',
 				display: 'standalone',
 				background_color: '#18181b',
 				theme_color: '#18181b',
-				description: 'a games library',
+				description: 'a cyber dice game',
 				icons: [
 					{
-						src: '/neon-icon-192.png',
+						src: '/cyber-dice-icon-192.png',
 						sizes: '192x192',
 						type: 'image/png',
 					},
 					{
-						src: '/neon-icon-512.png',
+						src: '/cyber-dice-icon-512.png',
 						sizes: '512x512',
 						type: 'image/png',
 					},

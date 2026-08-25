@@ -1,6 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 
-import HomeView from '@/views/HomeView.vue'
 import CyberDiceView from '@/views/CyberDiceView.vue'
 
 const router = createRouter({
@@ -9,18 +8,9 @@ const router = createRouter({
 		{
 			path: '/',
 			name: 'home',
-			component: HomeView,
-			meta: {
-				title: 'neon games',
-				favicon: '/neon-favicon-32.png',
-			},
-		},
-		{
-			path: '/cyber-dice',
-			name: 'cyber-dice',
 			component: CyberDiceView,
 			meta: {
-				title: 'cyber-dice',
+				title: 'cyber dice',
 				favicon: '/cyber-dice-favicon-32.png',
 			},
 		},

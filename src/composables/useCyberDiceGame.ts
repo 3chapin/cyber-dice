@@ -137,7 +137,7 @@ export const useCyberDiceGame = (
 
 	const exitGame = () => {
 		resetStorage()
-		router.push('/')
+		router.push('/mjlowell.com')
 	}
 
 	const resetStorage = () => {

@@ -134,7 +134,7 @@ export const useCyberDiceGame = (
 
 	const exitGame = () => {
 		resetStorage()
-		window.location.href = '/mjlowell.com'
+		window.location.href = 'https://mjlowell.com'
 	}
 
 	const resetStorage = () => {

@@ -18,12 +18,12 @@ import type { drawerTypes } from '@/types/drawerTypes.ts'
 
 // component imports
 import CyberText from '@/components/CyberText.vue'
-import CyberTextFlow from '@/components/cyberDiceGame/CyberTextFlow.vue'
-import DrawerComponent from '@/components/cyberDiceGame/DrawerComponent.vue'
-import NextRoundScreen from '@/components/cyberDiceGame/NextRoundScreen.vue'
-import GameOverScreen from '@/components/cyberDiceGame/GameOverScreen.vue'
-import CyberDiceRules from '@/components/cyberDiceGame/CyberDiceRules.vue'
-import ConfirmationModal from '@/components/cyberDiceGame/ConfirmationModal.vue'
+import CyberTextFlow from '@/components/CyberTextFlow.vue'
+import DrawerComponent from '@/components/DrawerComponent.vue'
+import NextRoundScreen from '@/components/NextRoundScreen.vue'
+import GameOverScreen from '@/components/GameOverScreen.vue'
+import CyberDiceRules from '@/components/CyberDiceRules.vue'
+import ConfirmationModal from '@/components/ConfirmationModal.vue'
 
 // icon imports
 import GearIcon from '@/components/icons/GearIcon.vue'

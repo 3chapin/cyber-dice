@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import EventHistory from '../icons/EventHistory.vue'
-import SquaresIcon from '../icons/SquaresIcon.vue'
-import UserMinus from '../icons/UserMinus.vue'
+import EventHistory from './icons/EventHistory.vue'
+import SquaresIcon from './icons/SquaresIcon.vue'
+import UserMinus from './icons/UserMinus.vue'
 import type { drawerTypes } from '@/types/drawerTypes.ts'
 
 const props = withDefaults(

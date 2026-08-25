@@ -4,6 +4,10 @@ interface NavigatorUserAgentData {
 	brands?: Array<{ brand: string; version: string }>
 }
 
+interface NavigatorWithStandalone extends Navigator {
+	standalone?: boolean
+}
+
 function hasUserAgentData(
 	nav: Navigator,
 ): nav is Navigator & { userAgentData: NavigatorUserAgentData } {
@@ -35,4 +39,12 @@ export const isMobile = () => {
 			navigator.userAgent,
 		)
 	}
+}
+
+export const isPwa = () => {
+	if (window.matchMedia('(display-mode: standalone)').matches) {
+		return true
+	}
+
+	return (window.navigator as NavigatorWithStandalone).standalone === true
 }

@@ -6,6 +6,7 @@ import draggable from 'vuedraggable'
 
 // util imports
 import { isMobile } from '@/utils/navigator.ts'
+import { isPwa } from '@/utils/navigator.ts'
 
 // composable imports
 import { useKeyboardOpen } from '@/composables/useKeyboardOpen.ts'
@@ -32,6 +33,9 @@ import UserMinus from '@/components/icons/UserMinus.vue'
 import HelpIcon from '@/components/icons/HelpIcon.vue'
 
 const isMobileDevice = isMobile()
+
+const isPwaMode = isPwa()
+
 const { keyboardOpen } = useKeyboardOpen()
 
 const { flashing, flashRed } = useFlashOverlay()
@@ -648,7 +652,7 @@ const {
 						see rules
 					</button>
 					<button
-						v-if="isMobileDevice === false"
+						v-if="isPwaMode === false"
 						name="exit-game"
 						@click="exitGame"
 						@touchstart="() => {}"
